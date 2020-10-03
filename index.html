@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+    
+          <!-- custom CSS -->
+      <link rel="stylesheet" href="style.css">
+
+          <!--bootstrap CSS  -->
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+        <!-- fontawesome CSS  -->
+      <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+      <link rel="stylesheet" href="css/fontawesome/fontawesome.min.css">
+      <link rel="stylesheet" href="css/fontawesome/all.css">
+          
+        
+      <title>Mon projet bootstrap</title>
+  </head>
+  <body>
+      <!--  L'on ecrit les proprietes bootstrap dans 'class' 
+          'bg' signifie "background c'est une propriete"
+          'text' referencie les lettres: propriete "px(pour la gauche et droite" "py(pour le haut et bas"
+      <h1 class="text-light bg-success display-1 mt-5 pt-5">Hello World</h1>
+      <h1 class="text-success bg-warning display-2 mb-5 pb-5">Hello World</h1>
+      <h1 class="text-danger bg-success display-3 ml-5 pl-5">Hello World</h1>
+      <h1 class="text-warning bg-muted display-4">Hello World</h1>
+      <h1 class="text-primary bg-danger font-weight-bold">Hello World</h1>
+      <h1 class="text-secondary bg-info text-uppercase p-5">Hello World</h1>
+      <h1 class="text-muted bg-primary text-center m-5">Hello World</h1>
+      <h1 class="text-dark bg-secondary">Hello World</h1>
+      <h1 class="text-info bg-dark">Hello World</h1> -->
+
+      <!-- ce navbar est contenu dans le document examples de bootstrap
+      Et mtn nous pouvons le modifier d'apres nos besoins-->
+
+      <!-- Procedure d'installation d'une librairie d'icons:
+              1.Pour travailler avec les icons en local 
+              on telecharge les fichiers sources de sicons sur la toile
+              :"https://fontawesome icons.com" 
+            Apres telechargement on extrait les fichiers, 
+            on copie les fichiers ssuivant respectivement 
+              dans les dossiers css et js du projet 
+                => "fontawesome.css" et "fontawesome.min.css"
+                => "fontawesome.js" et fontawesome.min.js"-->
+                <!-- En enlevant 'fixed top' dans le nav, on decolle le navbar du haut de l'ecran -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#"><i class="fas fa-child text-warning fa-2x"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase font-weight-bold text-light px-3" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase font-weight-bold text-light px-3" href="#">skills</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="nav-link text-uppercase font-weight-bold text-light px-3 dropdown-toggle" data-toggle="dropdown" href="#">projects </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">projet 1</a></li>
+                      <li><a class="dropdown-item" href="#">projet 2</a></li>
+                      <li><a class="dropdown-item" href="#">projet 3</a></li>
+                      <li><a class="dropdown-item" href="#">projet 4</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase font-weight-bold text-light px-3" href="#">team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase font-weight-bold text-light px-3" href="#">contact us</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <div class="input-group">
+                <input class="form-control mr-sm-2 mr-xs-4" type="text" placeholder="Search">
+                <div class="input-group-append">
+                  <button class="btn btn1 btn-outline-success mr-5 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+      </nav>
+
+        <!-- begin home section -->
+        <section>
+          <!-- "fluid pour prendre tout l'ecran" -->
+            <div class="container-fluid">
+              <!-- justify et align pour centrer et -->
+              <div class="row bg-warning home justify-content-center align-items-center" style="height: 100vh">
+                <div class="col-md-10 text-center">
+                  <h1 class="text-capitalize display-2"><span class="text-info">pure bootstrap</span><br><span class="text-white font-weight-bold">website</span></h1>
+                  <p class="font-italic text-white" style="font-size: 30px">lorem ipsum dalor sit amet consectetur</p>
+
+                  <a class="btn btn-success btn-lg mx-2 text-gray-dark" href="#">press here</a>
+                  <a class="btn btn-danger btn-lg mx-2" href="#">press here</a>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- end home section -->
+
+        <!-- begin skills section -->
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 sm text-center ">
+                      <h1 class="display-1 text-warning text-capitalize">skills</h1>
+                      <p >lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a. Omnis, numquam!</p>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-md-4 text-center">
+                      <i class="fas fa-desktop fa-5x text-warning"></i>
+                      <h1>Development</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium quas perferendis voluptas rerum sapiente minus laborum quis sunt facere in, natus animi voluptatibus nobis omnis possimus quo quae reprehenderit?</p>
+                      <button class="btn btn-outline-warning">Learn more</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <i class="fas fa-edit fa-5x text-warning"></i>
+                      <h1 class=" text-capitalize">design</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium quas perferendis voluptas rerum sapiente minus laborum quis sunt facere in, natus animi voluptatibus nobis omnis possimus quo quae reprehenderit?</p>
+                      <button class="btn btn-outline-warning">Learn more</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <i class="fas fa-cogs fa-5x text-warning"></i>
+                      <h1>Creativity</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium quas perferendis voluptas rerum sapiente minus laborum quis sunt facere in, natus animi voluptatibus nobis omnis possimus quo quae reprehenderit?</p>
+                      <button class="btn btn-outline-warning">Learn more</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- end skills section -->
+
+        <!-- begin projects section -->
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                      <!-- Lettre en majuscule, couleur de texte -->
+                      <h1 class=" display-1 text-capitalize text-warning mb-3">Projects</h1>
+                      <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a. Omnis, numquam!</p>
+                    </div>
+                </div>
+                <div class="row py-5 ">
+                    <div class="col-md-3 text-center">
+                      <img src="images_projet/images/project1.jpg" alt="projet1" style="height: 20vh"/>
+                      <h2 class="text-warning">Project One</h2>
+                      <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a</p>
+                    </div>
+                    <div class="col-md-3 text-center mt-3">
+                        <img src="images_projet/images/project2.jpg" alt="projet2" style="height: 20vh"/>
+                        <h2 class="text-warning">Project Two</h2>
+                        <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a</p>
+                    </div>
+                    <div class="col-md-3 text-center mt-4">
+                        <img src="images_projet/images/project3.jpg" alt="projet3" style="height: 20vh"/>
+                        <h2 class="text-warning">Project Three</h2>
+                        <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a</p>
+                    </div>
+                    <div class="col-md-3 text-center mt-5">
+                        <img src="images_projet/images/project4.jpg" alt="projet4" style="height: 20vh"/>
+                        <h2 class="text-warning">Project Four</h2>
+                        <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Projects section -->
+
+        <!-- Begin Team section -->
+        <section class="bg-dark px-5 py-5">
+          <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12 text-center mt-3">
+                    <h1 class="text-warning display-1">Team</h1>
+                    <p class= "text-white" >lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a</p>
+                </div>
+            </div>
+            <div class="row">
+              <!-- card 1 -->
+                <div class="col-md-4 my-2">
+                  <div class="card">
+                    <img src="images_projet\images\kid1.jpg" alt="first" class="img-responsive card-img-top">
+                    <!-- "card permet de mettre l'image sous forme de carte avec 
+                      'card-title' qui prends le nom de la carte
+                      'card-subtitle' qui prends un paragraphe
+                      'card-footer' pour le pied de la carte" -->
+                      <div class="card-body ">
+                        <div class="card-title">
+                          <h3>Mickael</h3>
+                        </div>
+                        <div class="card-subtitle">
+                          <p>lorem ipsum dalor </p>
+                        </div>
+                        <div class=" card-footer text-right">
+                          <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                          <a href=""><i class="fab fa-twitter twitter text-info fa-2x"></i></a>
+                          <a href=""><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-md-4 my-2">
+                    <div class="card">
+                      <img src="images_projet\images\kid2.jpg" alt="second" class="img-responsive card-img-top">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <h3>Jack</h3>
+                      </div>
+                      <div class="card-subtitle">
+                        <p>lorem ipsum dalor</p>
+                      </div>
+                      <div class=" card-footer text-right">
+                        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href=""><i class="fab fa-twitter text-info fa-2x"></i></a>
+                        <a href=""><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-md-4 my-2">
+                  <div class="card">
+                    <img src="images_projet\images\kid3.jpg" alt="thirth" class="img-responsive card-img-top">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <h3>Ann</h3>
+                      </div>
+                      <div class="card-subtitle">
+                        <p>lorem ipsum dalor </p>
+                      </div>
+                      <div class=" card-footer text-right">
+                        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href=""><i class="fab fa-twitter text-info fa-2x"></i></a>
+                        <a href=""><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+          <!-- ~End Team Section -->
+
+        <!-- Begin Progress Section -->
+        <section class="py-5">
+          <div class="container-fluid">
+            <!-- title -->
+            <div class="row py-5">
+              <div class="col-md-12 text-center">
+                <!-- Lettre en majuscule, couleur de texte -->
+                <h1 class=" display-1 text-capitalize text-warning mb-3">Progress</h1>
+                <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a. Omnis, numquam!</p>
+              </div>
+            </div>
+            <!-- end title -->
+            <!-- Progress bar -->
+            <!-- Pour centrer les elements excepter les textes -->
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-secondary">
+                <h2>HTML</h2>
+                <div class="progress bg-secondary">
+                    <div class="progress-bar bg-primary" style="width: 50%">50%</div>
+                </div>
+              <h2>CSS</h2>
+                <div class="progress bg-secondary">
+                    <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+                </div>
+                <h2>JavaScript</h2>
+                <div class="progress bg-secondary">
+                    <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+                </div>
+              <h2>Bootstrap</h2>
+                <div class="progress bg-secondary">
+                    <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Progress Section -->
+
+        <!-- Begin Contact Section -->
+        <section class="mt-5 py-5 "> 
+          <div class="container-fluid">
+            <!-- title -->
+            <div class="row mt-5">
+              <div class="col-md-12 text-center ">
+                <h1 class="text-warning display-1">Contact Us</h1>
+                <p>lorem ipsum dalor sit amet consectetur adipisicing elit . Nam,a. Omnis, numquam!</p>
+              </div>
+            </div>
+            <!-- end title -->
+
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="text-center text-secondary">
+                    <h2 class="font-weight-bold mt-1">Got Question?</h2>
+                    <p>Stay Connected</p>
+                </div>
+                <form class="text-muted">
+                  <!-- "form-group" et "form-control" sont les deux proprietes des formulaires ils apportent des effets bootstrap -->
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea  class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <button class="btn btn-outline-warning" type="submit">Submit Question</button>
+                </form>
+              </div>
+            </div>
+        </div>
+        </section>
+        <!-- End Contact Section -->
+
+        <!-- Begin footer-->
+        <footer class="bg-secondary">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                  <h3 class="text-warning display-3 font-weight-bold p-3">pure bootstrap project</h3>
+                  <p class="font-italic font-weight-bold text-light mb-3">lorem ipsum dalor sit amet consectetur adipisicing elit</p>
+                  <div class="py-3">
+                    <a href="#"><i class="fab fa-facebook fa-2x text-primary mr-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x text-info mr-3"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x text-danger mr-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus text-danger fa-2x mr-3"></i></a>
+                  </div>
+                  <p class="text-light">&copy; Copyright 2019-Made by <span class="font-italic">N.S.K champion</span></p>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <!-- End footer  -->
+
+          <!-- jquery JS -->
+        <script src="js/jquery/jquery.js"></script>
+
+          <!-- bootstrap JS -->
+        <script src="js/bootstrap/bootstrap.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+          <!-- custom JS -->
+        <script src="App.js"></script>
+
+          <!--  fontawesome JS-->
+        <script src="js/fontawesome/fontawesome.js"></script>
+        <script src="js/fontawesome/fontawesome.min.js"></script>
+        <script src="js/fontawesome/all.js"></script>
+
+          <!-- Bootstrap grid system -->
+
+          <!-- Ici nous gerons les appareils(grid)
+          On en a 4 types:
+              XL: extra large(pour les ecrans desktop et projecteur)
+              Lg: large pour les ecrans laptop
+              md: medium: pour les tablettes  
+              sm: small: Pour telephone android
+              
+              En bootstrap ces 4 types d'ecran sont divises en 12 colonnes
+              On peut y inserer des lignes qui vont creer des cellules.
+              les lignes peuvent etre infinies. Chaque element de balisage
+              est reference par une colonne.
+               -->
+  </body>
+</html>

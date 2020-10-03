@@ -1,0 +1,18 @@
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
+  .btn1{
+    margin-left: -7px;
+    /* border-radius: none; */
+    /* padding: -1 0 -1 0; */
+  }
+  .bt2{
+    border:  2px solid orange;
+  }
+  .home{
+    margin-top: -4px;
+  }
+  
+  
